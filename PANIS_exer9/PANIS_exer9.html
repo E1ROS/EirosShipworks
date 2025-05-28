@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--PANIS, Rainella Denise L.
+  G-6L
+  Created: April 04, 2025 Last Modified: April 24, 2025
+  Desc: Supa Chill Pirate Deck Customization Webpage 
+  -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eiro’s Shipworks</title>
+  <link rel="stylesheet" href="PANIS_exer9.css"/>
+</head>
+<body>
+  <header>
+    <nav class="nav-container">
+      <div class="logo"><h1>Eiros' Shipworks</h1></div>
+      <ul class="nav-links">
+        <li><a href="#herospc">Home</a></li>
+        <li><a href="#ship-parts">Ship Parts</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+  <!-- section 01. hero space -->
+  <section id="herospc" class="herospc">
+    <div class="herospc-content">
+      <img src="images/custom-logo.png" alt="Eiro's Shipworks Logo" class="hero-logo">
+      <h2>Eiro's Shipworks Inc. <br> Trusted Parts for Every Sea-Worthy Vessel. </h2>
+    </div>
+  </section>
+
+  <!-- section 02. available services -->
+  <section id="ship-parts" class="parts-section">
+    <div class="box-container">
+      <div class="box">
+        <h3>Ship Parts</h3>
+        <p>Looking to upgrade your ship? Check out our stock.</p>
+      </div>
+      <div class="box">
+        <h3>Build-a-Goromaru</h3>
+        <p>Let us help you build your dream vessel from the docks up.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- section 03. build-a-goromaru -->
+  <section id="build-goromaru" class="build-section">
+    <h2 class="section-title">Build-a-Goromaru</h2>
+    <div class="build-container">
+  <div class="left-pane">
+    <div class="image-preview">
+      <!-- 6 Viewers in 2x3 Grid -->
+      <div class="viewer">
+        <h4>Cannons</h4>
+        <div class="image-box"><img src="images/shark-cannon.jpg" alt="Cannon Viewer"/></div>
+      </div>
+      <div class="viewer">
+        <h4>Machine Guns</h4>
+        <div class="image-box"><img src="images/machine-gun.jpg" alt="Machine Gun Viewer"/></div>
+      </div>
+      <div class="viewer">
+        <h4>Rocket Launcher</h4>
+        <div class="image-box"><img src="images/rocket-launcher.jpg" alt="Rocket Launcher Viewer"/></div>
+      </div>
+      <div class="viewer">
+        <h4>Hull</h4>
+        <div class="image-box"><img src="images/deck.jpg" alt="Hull Viewer"/></div>
+      </div>
+      <div class="viewer">
+        <h4>Sails</h4>
+        <div class="image-box"><img src="images/sail.jpg" alt="Sails Viewer"/></div>
+      </div>
+      <div class="viewer">
+        <h4>Others</h4>
+        <div class="image-box"><img src="images/treasure-map.jpg" alt="Others Viewer"/></div>
+      </div>
+    </div>
+
+    <!-- spline embed hehehe -->
+    <div class="spline-container">
+      <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.86/build/spline-viewer.js"></script>
+      <spline-viewer url="https://prod.spline.design/vnIlkOJT9keLNnAY/scene.splinecode"></spline-viewer>
+    </div>
+  </div>
+
+  <div class="form-container">
+    <form>
+      <div id="customer_details" class="form-group">
+          <h3>Customer Details</h3>
+          <label>Name:<input type="name" name="customer_name" id="customer_name" required></label>
+          <label>Mobile Number:<input type="tel" name="customer_no" id="customer_no" placeholder="09XXXXXXXXX" pattern="09[0-9]{9}" required></label>
+          <label>Email:<input type="email" name="customer_email" id="customer_email"required></label>
+      </div>
+      <div id="ship_apparatus" class="form-group">
+        <h3>Ship Apparatus</h3>
+        <label>Number of Crewmates:<input type="number" name="crew_num" id="crew_num" min="1" max="10"></label>
+        
+        <p>Cannons:</p>
+        <label><input type="radio" name="cannons" id="norm_cannons" value="normal" checked>Normal</label>
+        <label><input type="radio" name="cannons" id="lsr_cannons" value="laser">Laser</label>
+        <label><input type="radio" name="cannons" id="eth_cannons" value="ethereal">Ethereal</label>
+        <label><input type="radio" name="cannons" id="shrk_cannons"value="shark">Shark</label>
+  
+        <p>Machine Guns:</p>
+        <label><input type="radio" name="machine_guns" id="def_mgun" value="machine gun" checked>Machine Gun</label>
+        <label><input type="radio" name="machine_guns" id="eth_mgun" value="ethereal machine gun">Ethereal Machine Gun</label>
+    	<label><input type="radio" name="machine_guns" id="frz_mgun" value="frozen machine gun">Frozen Machine Gun</label>
+    	<label><input type="radio" name="machine_guns" id="gldn_mgun" value="golden machine gun">Golden Machine Gun</label>
+
+        <p>Rocket Launcher:</p>
+        <label><input type="radio" name="rocket_launcher" id="def_rocketlnch" value="rocket launcher" checked>Rocket Launcher</label>
+        <label><input type="radio" name="rocket_launcher" id="sq_rocketlnch" value="squid rocket launcher">Squid Rocket Launcher</label>
+        <label><input type="radio" name="rocket_launcher" id="tx_rocketlnch" value="toxic rocket launcher">Toxic Rocket Launcher</label>
+        <label><input type="radio" name="rocket_launcher" id="gldn_rocketlnch" value="golden rocket launcher">Golden Rocket Launcher</label>
+
+        <p>Hull:</p>
+        <label><input type="radio" name="hull" id="def_hull" value="default" checked>Default</label>
+        <label><input type="radio" name="hull" id="drgn_hull" value="dragon">Dragon</label>
+        <label><input type="radio" name="hull" id="hny_hull" value="hannya">Hannya</label>
+        <label><input type="radio" name="hull" id="dfsh_hull" value="dragonfish">Dragonfish</label>
+  
+        <p>Sails:</p>
+        <label><input type="radio" name="sail" id="def_sail" value="default" checked>Default</label>
+        <label><input type="radio" name="sail" id="mj_sail" value="majima">Majima</label>
+        <label><input type="radio" name="sail" id="kr_sail" value="kiryu">Kiryu</label>
+        <label><input type="radio" name="sail" id="dj_sail" value="dojima">Dojima</label>
+  
+        <p>Others:</p>
+        <label><input type="checkbox" name="misc" id="treasure_misc" value="Treasure Map">Treasure Map</label>
+        <label><input type="checkbox" name="misc" id="shark_misc" value="Sharkhead">Sharkhead</label>
+        <label><input type="checkbox" name="misc" id="karaoke_misc" value="Karaoke Player">Karaoke Player</label>
+        <label><input type="checkbox" name="misc" id="sofa_misc" value="Sofa">Sofa</label>
+
+        <label>Ship Size
+        <select name="ship_size">
+        	<option name="small" id="small" value="smol">Smol</option>
+        	<option name="medium" id="medium" value="med">Medium</option>
+        	<option name="large" id="large" value="yourmom">Huge</option>
+        </select>
+        </label>
+      </div>
+
+      <div id="delivery details" class="form-group">
+      	<h3>Delivery Details</h3>
+      	<label>Delivery Address<br><textarea rows="”10”" cols="”50”" placeholder="Honolulu, Hawaii..." name="delivery_addy" id="delivery_addy" required></textarea></label>
+      	<label>Preferred Delivery Date:<input type="date" name="delivery_date" id="delivery_date" value="delivery_date" required></label>
+      	<label>Preferred Delivery Time:<input type="time" name="delivery_time" id="delivery_time" value="delivery_time" required></label>
+      </div>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </div>
+  </main>
+  
+  <!-- footer -->
+  <footer id="contact">
+    <div class="footer-container">
+      <h2>Contact Us</h2>
+      <p>Email: eiroshipworks@up.edu.ph</p>
+      <p>Phone: +63 912 345 6789</p>
+      <p>Location: 1234 Raymundo Docks, suko na ko grabe</p>
+      <div class="footer-credits">
+        <p>&copy; 2025 Eiro's Shipworks. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
